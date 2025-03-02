@@ -1,0 +1,34 @@
+# config
+_exclude: extensions
+_subdirectory: project
+
+# questions
+project_name:
+  type: str
+  help: How would you like to name your project? (e.g. UV Copier Template)
+
+project_description:
+  type: str
+  help: How would you describe your project?
+
+author_name:
+  type: str
+  help: What is your name?
+
+author_mail:
+  type: str
+  help: What is your email adress?
+
+github_name:
+  type: str
+  help: What is your GitHub username?
+
+repository_name:
+  type: str
+  help: How would you like to name your GitHub repository?
+  default: "{% from 'extensions.jinja' import dashify %}{{ dashify(project_name) }}"
+
+module_name:
+  type: str
+  help: How would you like to name your Python module?
+  default: "{% from 'extensions.jinja' import slugify %}{{ slugify(project_name) }}"

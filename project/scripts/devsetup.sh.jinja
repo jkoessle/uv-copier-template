@@ -1,0 +1,11 @@
+# git setup
+git init
+git branch -M main
+git remote add origin git@github.com:{{ github_name }}/{{ repository_name }}.git
+
+# uv setup
+uv sync
+
+# pre-commit setup
+pre-commit install
+pre-commit autoupdate

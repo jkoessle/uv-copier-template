@@ -1,0 +1,7 @@
+{% macro slugify(value) -%}
+{{ value|lower|replace(' ', '_') }}
+{%- endmacro %}
+
+{% macro dashify(value) -%}
+{{ value|lower|replace(' ', '-') }}
+{%- endmacro %}
