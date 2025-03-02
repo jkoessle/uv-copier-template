@@ -1,6 +1,10 @@
 # Copier UV Template
 
-This is a very simple [copier](https://github.com/copier-org/copier) template for Python projects with src layout and dependency management by [uv](https://github.com/astral-sh/uv).
+[![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-black.json)](https://github.com/copier-org/copier)
+
+This is a very simple copier template for Python projects with src layout and dependency management by [uv](https://github.com/astral-sh/uv).
+
+
 
 ## Features
 
