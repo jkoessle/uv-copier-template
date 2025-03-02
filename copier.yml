@@ -1,6 +1,6 @@
 # config
 _exclude: extensions
-_subdirectory: project
+_subdirectory: project_template
 _templates_suffix: .jinja
 
 # questions
