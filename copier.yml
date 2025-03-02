@@ -1,6 +1,7 @@
 # config
 _exclude: extensions
 _subdirectory: project
+_templates_suffix: .jinja
 
 # questions
 project_name:
@@ -32,3 +33,14 @@ module_name:
   type: str
   help: How would you like to name your Python module?
   default: "{% from 'extensions.jinja' import slugify %}{{ slugify(project_name) }}"
+
+_message_after_copy: |
+    Your project "{{ project_name }}" has been created successfully!
+
+    Next steps:
+
+    1. Change directory to the project root:
+
+       $ cd {{ _copier_conf.dst_path }}
+
+    2. Read "README.md" to install project dependencies and start coding.
