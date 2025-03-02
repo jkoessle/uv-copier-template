@@ -1,5 +1,4 @@
 # config
-_exclude: extensions
 _subdirectory: project_template
 _templates_suffix: .jinja
 
@@ -10,7 +9,7 @@ project_name:
 
 project_description:
   type: str
-  help: How would you describe your project?
+  help: How would you describe your project shortly?
 
 author_name:
   type: str
